@@ -1,9 +1,6 @@
 package dayone;
 
 import java.io.*;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -41,7 +38,7 @@ public class DayOneMain {
             lastNumber = number;
         }
         if (firstNumber != null) {
-            return Integer.parseInt(firstNumber.toString() + lastNumber.toString());
+            return Integer.parseInt(firstNumber + lastNumber.toString());
         }
         return null;
     }
